@@ -1,60 +1,77 @@
+/*Grundbau*/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+/*Header*/
+
 * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    header {
-      background: #111;
-      color: #fff;
-      padding: 1rem 2rem;
-    }
+header {
+  background: #120e2c;
+  color: #fff;
+  padding: 1rem 2rem;
+}
 
-    .header-container {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-    }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s ease;
-    }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
 
-    nav a:hover {
-      color: #00bcd4;
-    }
+nav a:hover {
+  color: #00bcd4;
+}
 
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-        gap: 0.75rem;
-      }
-    }
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
 
+/*Über-mich*/
 
 .Über-mich {
   max-width: 800px;
   margin: 3rem auto;
   padding: 2rem;
-  background: #f9f9f9;
-  border-radius: 12px;
 }
 
 .Über-mich h1 {
@@ -70,4 +87,219 @@
   line-height: 1.6;
   color: #333;
   margin-bottom: 0.8rem;
+}
+
+/*Steckbrief*/
+
+.Steckbrief {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+.steckbrief-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.steckbrief-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.steckbrief-table th,
+.steckbrief-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.steckbrief-table th {
+  font-weight: bold;
+  background-color: #f2f2f2;
+  width: 30%;
+}
+
+.steckbrief-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.steckbrief-table tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* Kontaktbereich */
+.kontakt {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.kontakt h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.kontakt label {
+  font-weight: bold;
+}
+
+.kontakt input,
+.kontakt textarea,
+.kontakt select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.kontakt textarea {
+  resize: vertical;
+}
+
+.kontakt button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.kontakt button:hover {
+  background-color: #555;
+}
+
+/* Footer */
+.footer {
+  margin-top: 80px;
+  padding: 20px;
+  background-color: #120e2c;
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Lebenslauf */
+
+.lebenslauf-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.lebenslauf-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.lebenslauf-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.lebenslauf-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.lebenslauf-section em {
+  color: #666;
+  font-style: italic;
+}
+
+.lebenslauf-section ul {
+  padding-left: 1.5rem;
+}
+
+.lebenslauf-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.5rem 1rem;
+  }
+
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Über-mich,
+  .Steckbrief,
+  .lebenslauf-section,
+  .kontakt {
+    margin: 1rem;
+    padding: 1rem;
+    max-width: none;
+  }
+
+  .Über-mich h1,
+  .Steckbrief .steckbrief-title,
+  .lebenslauf-section h2,
+  .kontakt h2 {
+    font-size: 1.5rem;
+  }
+
+  .lebenslauf-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .Steckbrief .steckbrief-table,
+  .Steckbrief .steckbrief-table th,
+  .Steckbrief .steckbrief-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .Steckbrief .steckbrief-table th {
+    text-align: left;
+    background: none;
+    padding-bottom: 0.25rem;
+  }
+
+  .Steckbrief .steckbrief-table td {
+    padding-left: 0;
+    padding-bottom: 1rem;
+    border: none;
+  }
+
+  .Steckbrief .steckbrief-table tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    background: #f9f9f9;
+  }
 }
