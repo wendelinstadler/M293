@@ -182,6 +182,62 @@ nav a:hover {
   background-color: #555;
 }
 
+/* AGB checkbox styling */
+.agb-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+.agb-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #00bcd4;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.agb-row .agb-label {
+  font-size: 14px;
+  color: #333;
+}
+.agb-row .agb-label a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: 600;
+}
+.agb-row .agb-label a:hover {
+  text-decoration: underline;
+}
+
+/* Geschlecht (radio) styling */
+.geschlecht-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+  border: none;
+  padding: 0;
+}
+.geschlecht-row legend {
+  font-weight: 700;
+  font-size: inherit;
+  margin-right: 6px;
+}
+.geschlecht-row label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+.geschlecht-row input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #00bcd4;
+  cursor: pointer;
+}
+
 /* Footer */
 .footer {
   margin-top: 80px;

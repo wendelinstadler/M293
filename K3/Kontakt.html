@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
@@ -23,23 +23,42 @@
     <main>
       <section class="kontakt">
         <h2>Kontaktformular</h2>
-        <form action="#" method="post">
+        <form
+          action="https://gibm.becknet.ch/formular/formular.php"
+          method="post"
+        >
           <label for="name">Name:</label><br />
-          <input type="text" id="name" name="name" required /><br /><br />
+          <input type="text" id="name" name="name" required/>
+          
+          <fieldset class="geschlecht-row">
+            <legend>Geschlecht</legend>
+            <label><input type="radio" name="geschlecht" value="divers" required /> Divers</label>
+            <label><input type="radio" name="geschlecht" value="maennlich" /> Männlich</label>
+            <label><input type="radio" name="geschlecht" value="weiblich" /> Weiblich</label>
+          </fieldset>
+
+          <br /><br />
 
           <label for="email">E-Mail:</label><br />
-          <input type="email" id="email" name="email" required /><br /><br />
+          <input type="email" id="email" name="email" required/>
+          <br /><br />
 
           <label for="betreff">Betreff:</label><br />
           <select id="betreff" name="betreff" required>
             <option value="">Bitte wählen</option>
             <option value="privat">Privat</option>
-            <option value="problem">Problem mit der Website</option>
-          </select><br /><br />
+            <option value="problem">Problem mit der Website</option></select
+          ><br /><br />
 
           <label for="nachricht">Nachricht:</label><br />
           <textarea id="nachricht" name="nachricht" rows="5" required></textarea
           ><br /><br />
+
+          <div class="agb-row">
+            <input id="AGB" type="checkbox" name="AGB" required />
+            <label for="AGB" class="agb-label">Ich akzeptiere die <a href="AGB.html" target="_blank">AGB</a></label>
+          </div>
+          <br />
 
           <button type="submit">Absenden</button>
         </form>
