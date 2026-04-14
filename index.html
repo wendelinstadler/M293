@@ -2,17 +2,17 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Indexseite">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <!-- <link rel="stylesheet" href="CSS/CSS.css" /> -->
     <link rel="stylesheet" href="CSS/Css_v3.css" />
   </head>
-
   <body>
     <header>
       <div class="header-container">
         <h1 class="Header-titel">Wendelin Stadler</h1>
-        <nav>
+        <button class="burger" onclick="toggleMenu()">☰</button>
+        <nav id="menu">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="Html/Steckbrief.html">Steckbrief</a></li>
@@ -37,7 +37,7 @@
       </div>
     </main>
     <footer class="footer">
-      <a href="https://www.instagram.com/wendelin.sd?igsh=MThsbjZrcmdmazY5aw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/wendelin.sd?igsh=MThsbjZrcmdmazY5aw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram-Profil öffnen">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
           <defs>
             <linearGradient id="insta-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
@@ -55,5 +55,10 @@
         </svg>
       </a>
     </footer>
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
