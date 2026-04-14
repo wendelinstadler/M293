@@ -184,3 +184,27 @@ button:not(.burger) {
 
   iframe, video { height: 250px; }
 }
+
+.burger {  display: none !important;   margin-left: auto; }
+
+#menu {   display: block !important; }
+
+.header .header-container,
+header .header-container { display: flex; align-items: center; justify-content: space-between;}
+
+@media (max-width: 900px) {
+  header nav ul { gap: 0.5rem;}
+
+  header nav a { font-size: 0.95rem; }
+}
+
+@media (max-width: 700px) {
+
+  .burger { display: block !important;}
+
+  #menu { display: none !important; width: 100%;}
+
+  #menu.active { display: block !important;}
+
+  #menu ul { flex-direction: column; }
+}
